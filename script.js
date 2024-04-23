@@ -10,7 +10,7 @@ const generateAdvice = (url, options = {}) => {
         .then(data => {
             adviceIdSpan.textContent = data.slip.id;
             adviceText.textContent = data.slip.advice;
-            console.log(data)
+            // console.log(data)
         })
         .catch(error => console.error(error))
 }
